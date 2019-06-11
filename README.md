@@ -32,7 +32,7 @@ npm install                                                        //下載相�
 npm run dev                                                        //執行專案
 ```
 
-接著就可以在網頁輸入http://localhost:3000見到頁面
+接著就可以在網頁輸入http://localhost:3000 見到頁面
 
 ### 功能說明
 
