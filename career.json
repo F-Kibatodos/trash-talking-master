@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "career": "工程師",
+      "image": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg",
+      "trash": ["加個按鈕", "加新功能", "切個版", "改一點 code"]
+    },
+    {
+      "career": "設計師",
+      "image": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg",
+      "trash": ["畫一張圖", "改個 logo", "順便幫忙設計一下", "隨便換個設計"]
+    },
+    {
+      "career": "創業家",
+      "image": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg",
+      "trash": ["週末加班", "要能賺錢", "想個 business model", "找 VC 募錢"]
+    },
+    {
+      "career": "醫生",
+      "image": "http://www.mpmslaw.com/wp-content/uploads/2017/02/ct-medical-malpractice-attorney.jpg",
+      "trash": ["看個病", "醫點疑難雜症", "跨科看", "賺棟房子", "動個手術"]
+    },
+    {
+      "career": "老師",
+      "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/A2KqU29/4k-portrait-of-an-unhappy-class-teacher-while-students-wreak-havoc_sp-3bey7__F0000.png",
+      "trash": ["下班順便顧個學生", "多改幾份考卷", "不處罰學生", "代一下課"]
+    }
+  ]
+}
