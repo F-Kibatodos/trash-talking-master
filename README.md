@@ -27,7 +27,7 @@ mkdir 資料夾名稱   //創建新資料夾
 
 ```
 git clone https://github.com/F-Kibatodos/trash-talking-master.git  //將此專案下載到資料夾
-cd restaurant-list                                                 //移動到專案資料夾
+cd  指定資料夾                                                       //移動到專案資料夾
 npm install                                                        //下載相關npm套件
 npm run dev                                                        //執行專案
 ```
