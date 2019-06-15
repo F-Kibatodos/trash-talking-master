@@ -19,6 +19,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
+app.use(express.static('public'))
+
 // 設定路由
 app.get('/', (req, res) => {
   const job = career.results
@@ -28,7 +30,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const job = career.results
   const target = req.body
-  const trashTalk = generateTrashTalk(target)
+  const trashTalk = generateTrashTalk(target.career)
   res.render('index', { trashTalk, target, job })
 })
 

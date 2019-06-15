@@ -4,12 +4,11 @@ function selectTrashTalk(array) {
   return array[index]
 }
 
-const vocations = require('./career.json')
-const vocation = vocations.results
+const vocations = require('./career.json').results
 
 function generateTrashTalk(option) {
   // 準備幹話庫
-  const noTargetPharse = [
+  const noTargetPhrase = [
     '沒人可以噴垃圾話嗎...?請期待邊緣人必備，自我對話程式',
     '臥槽!沒對象也能講幹話!',
     '麥當勞歡樂送，快開門!',
@@ -22,23 +21,21 @@ function generateTrashTalk(option) {
     '之前去邊緣人互助會分享故事結果沒人理我(泣'
   ]
   const phrase = ['很簡單', '很容易', '很快', '很正常']
+  // 沒選對象的話
 
-  // 依使用者選到的目標產生幹話
-  let collection = []
-  // 沒選對想的話
-  if (!option.career) return selectTrashTalk(noTargetPharse)
   // 選到哪個對像職業該產生什麼幹話
-  for (let item of vocation) {
-    if (option.career === item.career) collection = item.trash
-  }
+  const vocation = vocations.find(v => v.career === option)
 
   // 製造幹話
-  let trashTalk = `身為一個${option.career}，${selectTrashTalk(
-    collection
-  )}${selectTrashTalk(phrase)}吧`
 
   // 回傳幹話
-  return trashTalk
+  // return trashTalk
+
+  return option
+    ? `身為一個${vocation.career}，${selectTrashTalk(
+        vocation.trash
+      )}${selectTrashTalk(phrase)}吧`
+    : selectTrashTalk(noTargetPhrase)
 }
 
 module.exports = generateTrashTalk
